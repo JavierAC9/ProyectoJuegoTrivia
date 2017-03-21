@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dragon Ball Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/4StarDragonBall.ico">
+    <script src="js/juego.js"></script>
+</head>
+
+<body class="pregunta">
+    <div id="bloquetitulo">
+        <a href="pregunta2.html"><img src="img/FlechaIzq2.png"  height="85" width=auto></a>   
+        <img src="img/DragonBallTitulo.png"  height="100" width=auto>    
+        <a href="pregunta4.html"><img src="img/FlechaDer2.png"  height="85" width=auto></a>      
+    </div>  
+
+
+    <div class="formContainer">
+       
+        <video width=auto height="180" controls>
+            <source src="video/PlanetaKaiosama.mp4" type="video/mp4">
+            <source src="video/PlanetaKaiosama.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+      
+
+        <p>Pregunta 3. ¿Quién vive en este planeta?</p>
+
+        <form class="formulario">
+
+
+            <label class="respuesta">Respuesta: </label> 
+            <div class="radio">
+                
+                  <input type="radio" name="color" value="Kami-sama" class="radio" id="1">
+                  <label for="1">Kami-sama </label>                
+               
+                  <input type="radio" name="color" value="Babidi" class="radio" id="2">
+                  <label for="2">Babidi </label>                        
+
+                   <input type="radio" name="color" value="Dr. Maki Gero" class="radio" id="3">
+                   <label for="3">Dr. Maki Gero </label>    
+
+                   <input type="radio" name="color" value="Kaio-sama" class="radio" id="4">
+                   <label for="4">Kaio-sama </label>     
+            </div>
+
+            <button type="button" id="boton" onclick="respuesta3()">Responder</button>
+
+             <p id="resultado"></p>
+            
+        </form>
+          
+    </div>
+
+
+    
+  
+</body>
+
+</html>
